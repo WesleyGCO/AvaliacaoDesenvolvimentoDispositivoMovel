@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class PrimeiraPagina extends StatelessWidget {
@@ -10,20 +12,23 @@ class PrimeiraPagina extends StatelessWidget {
       body: Center(
         //Deixar os componentes centralizados
         child: Column(
-          //Todos os componentes definidos no array, ficará em coluna
+          //Todos os componentes definidos no array, ficarão em coluna
           children: [
-            // ignore: prefer_const_constructors
             TextField(
               cursorColor: Colors.green, // Define a cor do cursor
-              maxLength:
-                  250, // Define a quantidade de caracteres que podem ser digitados
+              maxLength: 250, // Define a qtde de caracteres a serem digitados
               decoration: InputDecoration(
                   label: Text("Nome"), // Define o nome do campo a ser digitado
-                  hintText:
-                      'Informe seu nome'), // Define a dica do que é para colocar no campo
+                  hintText: 'Informe seu nome'),
+              onChanged: (valorDigitado) {
+                print(valorDigitado);
+              },
             ),
             ElevatedButton(
-                onPressed: () {}, //Faz nada, se declarar assim
+                onPressed: () {
+                  //Função anônima: () {}
+                  print("teste"); // Imprime no console
+                },
                 child: Text("Ok"))
           ],
         ),
