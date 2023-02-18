@@ -44,11 +44,26 @@ class Calculadora extends StatelessWidget {
                         builder: (context) {
                           return AlertDialog(
                             title: Text("Resultado"),
-                            content: Text(resultado),
+                            content: Text(resultado.toString()),
                           );
                         });
                   },
-                  child: Text("Soma"))
+                  child: Text("Soma")),
+              ElevatedButton(
+                  onPressed: () {
+                    resultado = num1 - num2;
+
+                    showDialog(
+                        // Tela com o conteúdo digitado
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            title: Text("Resultado"),
+                            content: Text(resultado.toString()),
+                          );
+                        });
+                  },
+                  child: Text("Diferença")),
             ],
           ),
         ),
