@@ -39,8 +39,35 @@ void main(List<String> arguments) {
 
   ///segunda forma de demonstrar informações a cada jeito
   print('''
-    linha1
-    linha2
-    linha3
+  linha1
+  linha2
+  linha3
   ''');
+
+  /*
+  Atividade 01 - Defina váriaveis de um produto (com diversos tipos) e imprima com as devidas descrições
+  */
+
+  print("Carros");
+
+  int ano_celta = 2003;
+  String nome_celta = 'Celta';
+  String combustivel_celta = 'Gasolina';
+  double peso_celta = 890.5;
+  double preco_celta = 15000;
+
+  int ano_hilux = 2018;
+  String nome_hilux = 'Hilux';
+  String combustivel_hilux = 'Diesel';
+  double peso_hilux = 2090.9;
+  double preco_hilux = 167999;
+
+  print(
+      "O automóvel $nome_celta, ano $ano_celta, utiliza o combustível $combustivel_celta, tem um peso de $peso_celta KG e custa $preco_celta mil reais.");
+  print(
+      "O automóvel $nome_hilux, ano $ano_hilux, utiliza o combustível $combustivel_hilux, tem um peso de $peso_hilux KG e custa $preco_hilux mil reais.");
+
+  /*
+  Atividade 02 - Conforme o seu projeto particular, definar as variáveis de um modelo e imprima na tela
+  */
 }
