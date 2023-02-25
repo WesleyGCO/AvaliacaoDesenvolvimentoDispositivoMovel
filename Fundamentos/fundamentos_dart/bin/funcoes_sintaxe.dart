@@ -3,7 +3,18 @@ import 'dart:io';
 void main(List<String> arguments) {
   print("Sintaxe Funções");
 
-  verificarAprovacao();
+  //verificarAprovacao();
+
+  //var saidaDois = verificarAprovacaoDois();
+  //print(saidaDois);
+
+  var nota1 = 60.0;
+  var nota2 = 59.9;
+
+  //verificarAprovacaoTres(nota1, nota2);
+
+  //var saidaQuatro = verificarAprovacaoQuatro(nota1, nota2);
+  //print(saidaQuatro);
 }
 
 //Função sem retorno e sem parametro
@@ -34,8 +45,8 @@ void verificarAprovacao() {
   print((media >= 60) ? "Aprovado" : "Reprovado");
 }
 
-// Função sem retorno e com parametro
-void verificarAprovacaoDois() {
+// Função com retorno e sem parametro
+String verificarAprovacaoDois() {
   print("A média para aprovação é 60!");
 
   double nota1, nota2, media;
@@ -49,14 +60,30 @@ void verificarAprovacaoDois() {
   media = (nota1 + nota2) / 2;
 
   if (media >= 60) {
-    return print("Aprovado");
+    return "Aprovado";
   } else {
-    return print("Reprovado");
+    return "Reprovado";
   }
 }
 
+// Função sem retorno e com parametro
+void verificarAprovacaoTres(double nota1, double nota2) {
+  print("A média para aprovação é 60!");
 
-// Função com retorno e sem parametro
+  double media = (nota1 + nota2) / 2;
 
+  print((media >= 60) ? "Aprovado" : "Reprovado");
+}
 
 // Função com retorno e com parametro
+String verificarAprovacaoQuatro(double nota1, double nota2) {
+  print("A média para aprovação é 60!");
+
+  double media = (nota1 + nota2) / 2;
+
+  if (media >= 60) {
+    return "Aprovado";
+  } else {
+    return "Reprovado";
+  }
+}
