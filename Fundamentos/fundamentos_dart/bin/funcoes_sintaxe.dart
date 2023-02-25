@@ -15,6 +15,8 @@ void main(List<String> arguments) {
 
   //var saidaQuatro = verificarAprovacaoQuatro(nota1, nota2);
   //print(saidaQuatro);
+  //OU
+  //print(verificarAprovacaoQuatro(nota1, nota2));
 }
 
 //Função sem retorno e sem parametro
