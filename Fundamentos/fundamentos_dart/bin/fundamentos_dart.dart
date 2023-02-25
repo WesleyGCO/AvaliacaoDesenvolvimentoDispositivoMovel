@@ -70,4 +70,12 @@ void main(List<String> arguments) {
   /*
   Atividade 02 - Conforme o seu projeto particular, definar as variáveis de um modelo e imprima na tela
   */
+
+  int num_pedido = 55555;
+  String nome_produto = 'Bolo de chocolate';
+  double preco_produto = 21;
+  double valor_entrega = 7.50;
+
+  print(
+      "O pedido $num_pedido tem o produto $nome_produto, sendo o seu preço de $preco_produto reais e a entrega no valor de $valor_entrega reais.");
 }
