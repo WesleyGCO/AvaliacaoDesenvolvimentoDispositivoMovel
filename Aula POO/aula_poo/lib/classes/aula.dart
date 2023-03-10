@@ -1,4 +1,5 @@
 import 'package:aula_poo/classes/aluno.dart';
+import 'package:aula_poo/classes/aluno3.dart';
 import 'package:aula_poo/classes/professor.dart';
 
 void main(List<String> arguments) {
@@ -21,4 +22,6 @@ void main(List<String> arguments) {
 
   print(
       "Nome: ${professor.nome}\nSIAPE: ${professor.SIAPE}\nCPF: ${professor.CPF}");
+
+  print("${Aluno3(RA: 4444, nome: "Joaquim", CPF: "34343434")}");
 }
