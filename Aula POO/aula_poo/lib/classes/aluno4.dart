@@ -1,10 +1,10 @@
-class Aluno3 {
+class Aluno4 {
   int? RA;
   String? nome;
   String? CPF;
   Function minhaFuncao;
 
-  Aluno3(
+  Aluno4(
       {required this.RA,
       required this.nome,
       required this.CPF,

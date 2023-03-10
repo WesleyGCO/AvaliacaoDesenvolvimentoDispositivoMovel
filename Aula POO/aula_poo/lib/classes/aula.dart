@@ -1,5 +1,6 @@
 import 'package:aula_poo/classes/aluno.dart';
 import 'package:aula_poo/classes/aluno3.dart';
+import 'package:aula_poo/classes/aluno4.dart';
 import 'package:aula_poo/classes/professor.dart';
 
 void main(List<String> arguments) {
@@ -24,4 +25,14 @@ void main(List<String> arguments) {
       "Nome: ${professor.nome}\nSIAPE: ${professor.SIAPE}\nCPF: ${professor.CPF}");
 
   print("${Aluno3(RA: 4444, nome: "Joaquim", CPF: "34343434")}");
+
+  var aluno4 = Aluno4(
+      RA: 33,
+      nome: "Jesus Cristo",
+      CPF: "000.000.000-00",
+      minhaFuncao: minhaFuncao);
+}
+
+void minhaFuncao() {
+  print("buscar livro");
 }
