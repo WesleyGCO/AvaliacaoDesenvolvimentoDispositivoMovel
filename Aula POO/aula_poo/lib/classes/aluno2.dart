@@ -4,4 +4,6 @@ class Aluno {
   String CPF;
 
   Aluno(this.RA, this.nome, this.CPF);
+
+  Aluno.outroConstrutor(this.RA, this.nome, this.CPF);
 }
