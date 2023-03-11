@@ -1,4 +1,4 @@
-import 'package:aula_poo/classes%20atividade/aluno.dart';
+import 'package:aula_poo/classes%20atividade/aluno_novo.dart';
 import 'package:aula_poo/classes%20atividade/professor_novo.dart';
 
 void main(List<String> arguments) {
