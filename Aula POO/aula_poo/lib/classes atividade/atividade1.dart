@@ -12,13 +12,15 @@ void main(List<String> arguments) {
   - Alterar para construtores nomeados
   Alterado
   - Criar um objeto aluno no print
-  Criado
   - Alterar professor para ter atributos nulos e não nulos
   Alterado
+  - Criar um objeto professor com função nomeada
   - Criar um objeto professor com função anônima
   - Criar um objeto professor com arrow function
   - Criar um objeto professor com arrow function no print
   */
+
+  //- Criar um objeto aluno no print
   print("${Aluno1(RA: 33333, nome: "Cristo", CPF: "083.435.435-99")}");
 
   //- Criar um objeto professor com função nomeada
